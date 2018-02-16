@@ -39,5 +39,6 @@ public class SQLiteJDBCDriverConnection {
      */
     public static void main(String[] args) {
         connect();
+        new Fenetre();
     }
 }
