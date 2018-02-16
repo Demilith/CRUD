@@ -38,7 +38,7 @@ public class Dtbinsert {
         String sql = "INSERT INTO warehouses(name,capacity) VALUES(?,?)";
 
         try (Connection conn = this.connect();
-             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, name);
             pstmt.setDouble(2, capacity);
             pstmt.executeUpdate();
